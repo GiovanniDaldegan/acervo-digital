@@ -1,0 +1,30 @@
+body {
+    background-color: lightgray;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    width: 800px;
+}
+
+.visualizador {
+    height: 250px;
+    width: 250px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+
+    background-color: rgb(145, 145, 145);
+}
+
+.descricao {
+    /* height: 200px; */
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
