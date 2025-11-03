@@ -66,4 +66,143 @@ body {
         margin: 0;
         overflow: hidden;
         background-color: #F5B12E;
-        text-align: center;}}
+        text-align: center;}
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 20px;
+}
+
+.carousel {
+    min-width: 300px;
+    max-width: 65vw;
+    height: 750px;
+
+    display: flex;
+    gap: 4vw;                       /* ajustar posição das páginas */
+
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    -ms-overflow-style: none;       /* Internet Explorer 10+ */
+    scrollbar-width: none;          /* Firefox, Safari 18.2+, Chromium 121+ */
+
+    anchor-name: --carousel;
+}
+
+ul::scroll-button(*) {
+    border: 0;
+    font-size: 3rem;
+    background: none;
+    color: black;
+    opacity: 0.7;
+    cursor: pointer;
+
+    position: absolute;
+    position-anchor: --carousel;
+}
+
+ul::scroll-button(*):hover, ul::scroll-button(*):focus {
+    opacity: 1;
+}
+
+ul::scroll-button(*):active {
+    translate: 1px 1px;
+}
+ul::scroll-button(*):disabled {
+    opacity: 0.2;
+    cursor: unset;
+}
+
+ul::scroll-button(left) {
+    content: "◄";
+    right: calc(anchor(left) - 70px);
+    bottom: calc(anchor(bottom) - 50px);
+}
+ul::scroll-button(right) {
+    content: "►";
+    left: calc(anchor(right) - 70px);
+    bottom: calc(anchor(bottom) - 50px);
+}
+
+
+.carousel-page {    
+    list-style-type: none;
+    border: 1px solid #dddddd;
+    padding: 18px;                  /* ajustar posição das páginas */
+    flex: 0 0 100%;                 /* ajustar tamanho das páginas */
+
+    scroll-snap-align: center;
+
+    background-color: #eeeeee;
+}
+
+.artwork {
+    min-width: 260px;
+    max-width: 40vw;
+    min-height: 220px;
+    max-height: 60vw;
+
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    
+    background-color: #dddddda5;
+    clear: both;
+}
+
+.carousel-page:nth-child(odd) .artwork:nth-child(odd) {
+    float: left;
+}
+.carousel-page:nth-child(odd) .artwork:nth-child(even) {
+    float: right;
+}
+.carousel-page:nth-child(even) .artwork:nth-child(even) {
+    float: left;
+}
+.carousel-page:nth-child(even) .artwork:nth-child(odd) {
+    float: right;
+}
+
+/* 
+.artwork:nth-child(odd) {
+}
+.artwork:nth-child(even) {
+    float: right;
+} */
+
+#work-01 {
+    background-image: url("https://www.letshotels.com.br/wp-content/uploads/2019/06/Beijodromo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#work-02 {
+    background-image: url("https://fundar.org.br/wp-content/uploads/2021/03/memorial5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#work-03 {
+    background-image: url("https://fundar.org.br/wp-content/uploads/2021/03/memorial6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+model-viewer {
+    /* min-width: 120px;
+    max-width: 50vw; */
+    width: 60%;
+    min-height: 200px;
+    max-height: 22vw;
+    padding: 5px;
+}
+
+.description {
+    width: 40%;
+    padding: 5px;
+}
+
