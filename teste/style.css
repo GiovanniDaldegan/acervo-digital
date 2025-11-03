@@ -86,11 +86,28 @@ ul::scroll-button(right) {
     border-radius: 5px;
     
     background-color: #dddddda5;
+    clear: both;
 }
 
-.artwork:nth-child(even) {
-    float: right;    
+.carousel-page:nth-child(odd) .artwork:nth-child(odd) {
+    float: left;
 }
+.carousel-page:nth-child(odd) .artwork:nth-child(even) {
+    float: right;
+}
+.carousel-page:nth-child(even) .artwork:nth-child(even) {
+    float: left;
+}
+.carousel-page:nth-child(even) .artwork:nth-child(odd) {
+    float: right;
+}
+
+/* 
+.artwork:nth-child(odd) {
+}
+.artwork:nth-child(even) {
+    float: right;
+} */
 
 #work-01 {
     background-image: url("https://www.letshotels.com.br/wp-content/uploads/2019/06/Beijodromo.jpg");
