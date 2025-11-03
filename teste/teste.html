@@ -7,17 +7,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Visualização com o model-viewer</h1>
-    <p>teste teste 123 paragrafo bem grande explicando o museu digital do memorial darcy ribeiro</p>
+    <h1>Museu Digital - Beijódromo Interativo</h1>
+    <p>Museu de gêmeos digitais das obras do Memorial Darcy Ribeiro.</p>
+
     <div class="container">
-        <model-viewer class="visualizador" src="glados.glb" poster="Sem_título.png" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
-        <p class="descricao">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque est tenetur placeat, necessitatibus numquam animi totam, dicta consequatur impedit consectetur harum? Natus perspiciatis nemo odio nesciunt cupiditate sequi neque veritatis.</p>
+        <ul class="carousel">
+            <li class="carousel-page" id="work-01">
+                <div class="artwork">
+                    <model-viewer src="glados.glb" poster="Sem_título.png" shadow-intensity="0.2" camera-controls touch-action="pan-y"></model-viewer>
+                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque est tenetur placeat, necessitatibus numquam animi totam, dicta consequatur impedit consectetur harum? Natus perspiciatis nemo odio nesciunt cupiditate sequi neque veritatis.</p>
+                </div>
+                <div class="artwork">
+                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident aspernatur distinctio odit aliquid laboriosam beatae corporis tenetur! Quaerat, sint quam? Maxime amet voluptates maiores laborum magni fuga eveniet soluta. Architecto!</p>
+                    <model-viewer src="potato_glados_-_from_portal_2.glb" poster="Sem_título.png" shadow-intensity="0.2" camera-controls touch-action="pan-y"></model-viewer>
+                </div>
+            </li>
+            <li class="carousel-page" id="work-02">
+                <div class="artwork">
+                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque est tenetur placeat, necessitatibus numquam animi totam, dicta consequatur impedit consectetur harum? Natus perspiciatis nemo odio nesciunt cupiditate sequi neque veritatis.</p>
+                    <model-viewer src="glados.glb" poster="Sem_título.png" shadow-intensity="0.2" camera-controls touch-action="pan-y"></model-viewer>
+                </div>
+                <div class="artwork">
+                    <model-viewer src="potato_glados_-_from_portal_2.glb" poster="Sem_título.png" shadow-intensity="0.2" camera-controls touch-action="pan-y"></model-viewer>
+                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident aspernatur distinctio odit aliquid laboriosam beatae corporis tenetur! Quaerat, sint quam? Maxime amet voluptates maiores laborum magni fuga eveniet soluta. Architecto!</p>
+                </div>
+            </li>
+            <li class="carousel-page" id="work-03">
+                <div class="artwork">
+                    <model-viewer src="glados.glb" poster="Sem_título.png" shadow-intensity="0.2" camera-controls touch-action="pan-y"></model-viewer>
+                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque est tenetur placeat, necessitatibus numquam animi totam, dicta consequatur impedit consectetur harum? Natus perspiciatis nemo odio nesciunt cupiditate sequi neque veritatis.</p>
+                </div>
+                <div class="artwork">
+                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident aspernatur distinctio odit aliquid laboriosam beatae corporis tenetur! Quaerat, sint quam? Maxime amet voluptates maiores laborum magni fuga eveniet soluta. Architecto!</p>
+                    <model-viewer src="potato_glados_-_from_portal_2.glb" poster="Sem_título.png" shadow-intensity="0.2" camera-controls touch-action="pan-y"></model-viewer>
+                </div>
+            </li>
+        </ul>
 
-        <p class="descricao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident aspernatur distinctio odit aliquid laboriosam beatae corporis tenetur! Quaerat, sint quam? Maxime amet voluptates maiores laborum magni fuga eveniet soluta. Architecto!</p>
-        <model-viewer class="visualizador" src="potato_glados_-_from_portal_2.glb" poster="Sem_título.png" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
-
-        <model-viewer class="visualizador" src="potato_glados_-_from_portal_2.glb" poster="Sem_título.png" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
-        <p class="descricao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta possimus laborum commodi hic facere, pariatur in corrupti sed? Vel quis laborum molestias dolores odit natus tempore nostrum enim, necessitatibus beatae.</p>
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
