@@ -91,7 +91,7 @@ body {
     anchor-name: --carousel;
 }
 
-ul::scroll-button(*) {
+.carousel::scroll-button(*) {
     border: 0;
     font-size: 3rem;
     background: none;
@@ -103,24 +103,24 @@ ul::scroll-button(*) {
     position-anchor: --carousel;
 }
 
-ul::scroll-button(*):hover, ul::scroll-button(*):focus {
+.carousel::scroll-button(*):hover, .carousel::scroll-button(*):focus {
     opacity: 1;
 }
 
-ul::scroll-button(*):active {
+.carousel::scroll-button(*):active {
     translate: 1px 1px;
 }
-ul::scroll-button(*):disabled {
+.carousel::scroll-button(*):disabled {
     opacity: 0.2;
     cursor: unset;
 }
 
-ul::scroll-button(left) {
+.carousel::scroll-button(left) {
     content: "◄";
     right: calc(anchor(left) - 70px);
     bottom: calc(anchor(bottom) - 50px);
 }
-ul::scroll-button(right) {
+.carousel::scroll-button(right) {
     content: "►";
     left: calc(anchor(right) - 70px);
     bottom: calc(anchor(bottom) - 50px);
