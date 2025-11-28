@@ -4,31 +4,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: auto;
-    width: 800px;
-}
-
-.visualizador {
-    height: 250px;
-    width: 250px;
-    border: 1px;
-    border-style: solid;
-    border-radius: 5px;
-
-    background-color: rgb(145, 145, 145);
-}
-
-.descricao {
-    /* height: 200px; */
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
 .foo{
     font-family: Arial, Helvetica, sans-serif;
     li {
@@ -36,7 +11,6 @@ body {
         text-align: center;
         text-indent: 100px;
         list-style-type: none;
-        text-align: center;
         color:#ffffff;
     }
 }
@@ -73,6 +47,13 @@ body {
     justify-content: center;
     
     padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    width: 800px;
 }
 
 .carousel {
@@ -117,61 +98,24 @@ body {
 
 .carousel::scroll-button(left) {
     content: "◄";
-    right: calc(anchor(left) - 70px);
-    bottom: calc(anchor(bottom) - 50px);
+    right: calc(anchor(left) + 20px);
+    bottom: calc(anchor(center));
 }
 .carousel::scroll-button(right) {
     content: "►";
-    left: calc(anchor(right) - 70px);
-    bottom: calc(anchor(bottom) - 50px);
+    left: calc(anchor(right) + 20px);
+    bottom: calc(anchor(center));
 }
 
-
-.carousel-page {    
-    list-style-type: none;
-    border: 1px solid #dddddd;
+.carousel-page {
     padding: 18px;                  /* ajustar posição das páginas */
     flex: 0 0 100%;                 /* ajustar tamanho das páginas */
+    border: 1px solid #dddddd;
+    background-color: #eeeeee;
+    list-style-type: none;
 
     scroll-snap-align: center;
-
-    background-color: #eeeeee;
 }
-
-.artwork {
-    min-width: 260px;
-    max-width: 40vw;
-    min-height: 220px;
-    max-height: 60vw;
-
-    display: flex;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 5px;
-    
-    background-color: #dddddda5;
-    clear: both;
-}
-
-.carousel-page:nth-child(odd) .artwork:nth-child(odd) {
-    float: left;
-}
-.carousel-page:nth-child(odd) .artwork:nth-child(even) {
-    float: right;
-}
-.carousel-page:nth-child(even) .artwork:nth-child(even) {
-    float: left;
-}
-.carousel-page:nth-child(even) .artwork:nth-child(odd) {
-    float: right;
-}
-
-/* 
-.artwork:nth-child(odd) {
-}
-.artwork:nth-child(even) {
-    float: right;
-} */
 
 #page01 {
     background-image: url("../../../assets/img/grid.png");
@@ -192,17 +136,39 @@ body {
     background-size: cover;
 }
 
-model-viewer {
-    /* min-width: 120px;
-    max-width: 50vw; */
-    width: 60%;
-    min-height: 200px;
-    max-height: 22vw;
-    padding: 5px;
+
+.artwork {
+    min-width: 260px;
+    min-height: 220px;
+    /* max-width: 40vw;
+    max-height: 60vw; */
+
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    
+    background-color: #dddddda5;
+    clear: both;
 }
 
-.description {
-    width: 40%;
-    padding: 5px;
+.visualizador {
+    height: 250px;
+    width: 250px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+
+    background-color: rgb(145, 145, 145);
+}
+
+.descricao {
+    margin: auto;
+    max-width: 400px;
+
+    /* height: 200px; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
