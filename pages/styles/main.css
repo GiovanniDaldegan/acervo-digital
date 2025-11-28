@@ -173,20 +173,20 @@ body {
     float: right;
 } */
 
-#work-01 {
-    background-image: url("https://www.letshotels.com.br/wp-content/uploads/2019/06/Beijodromo.jpg");
+#page01 {
+    background-image: url("../../assets/img/grid.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#work-02 {
-    background-image: url("https://fundar.org.br/wp-content/uploads/2021/03/memorial5.jpg");
+#page02 {
+    background-image: url("../../assets/img/grid.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#work-03 {
-    background-image: url("https://fundar.org.br/wp-content/uploads/2021/03/memorial6.jpg");
+#page03 {
+    background-image: url("../../assets/img/grid.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
