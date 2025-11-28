@@ -174,19 +174,19 @@ body {
 } */
 
 #page01 {
-    background-image: url("../../assets/img/grid.png");
+    background-image: url("../../../assets/img/grid.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #page02 {
-    background-image: url("../../assets/img/grid.png");
+    background-image: url("../../../assets/img/grid.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #page03 {
-    background-image: url("../../assets/img/grid.png");
+    background-image: url("../../../assets/img/grid.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
