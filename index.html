@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo - Gêmeos Digitais</title>
+    <link href="./assets/img/Favicon.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="./pages/styles/main.css">
+</head>
+<body>
+    <div class="navegacao">
+        <ul>
+            <li><a href="http://www.acervocal.unb.br">Início</a></li>
+            <li><a href="">Gêmeos Digitais</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <header>
+        <h1 class="pgtitle">Acervo - Gêmeos Digitais</h1>
+    </header>
+
+    <p>Acervo de gêmeos digitais 3D da Casa de Cultura da América Latina (CAL/DEX).</p>
+
+    <!-- INSERIR BALÃO MANUSEIO - aba com detalhes de como usar o visualizador 3D, mouse, touchpad e tela. translação, rotação, escala, âncora? -->
+
+    <div class="container">
+        <ul class="carousel">
+            <li class="carousel-page">
+                <div class="artwork">
+                    <model-viewer class="visualizador" src="./assets/models/obj1_1.glb" poster="" shadow-intensity="0.2" camera-controls camera-orbit="" touch-action="pan-y" auto-rotate interaction-prompt="none"></model-viewer>
+                    <p class="descricao">Peça 1</p>
+                </div>
+            </li>
+            <li class="carousel-page">
+                <div class="artwork">
+                    <model-viewer class="visualizador" src="./assets/models/obj1.glb" camera-controls tone-mapping="neutral" poster="" shadow-intensity="1" autoplay camera-orbit="-22.52deg 78.32deg 0.8707m" field-of-view="30deg" auto-rotate interaction-prompt="none"></model-viewer>
+                    <p class="descricao">Peça 2</p>
+                </div>
+            </li>
+            <li class="carousel-page">
+                <div class="artwork">
+                    <model-viewer class="visualizador" src="./assets//models/obj2.glb" camera-controls tone-mapping="neutral" poster="" shadow-intensity="1" shadow-softness="1" camera-orbit="" field-of-view="30deg" auto-rotate interaction-prompt="none"></model-viewer>
+                    <p class="descricao">Peça 3</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- INSERIR SEÇÂO SAIBA MAIS - descrição explicando o processo de escaneamento, importância da CAL, equipe responsável?, etc.  -->
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+</html>
