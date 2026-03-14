@@ -83,7 +83,9 @@ header {
 
 .carousel {
     width: 50vw;
+    max-width: 800px;
     height: 60vh;
+    max-height: 800px;
 
     display: flex;
     gap: 4vw;                       /* ajustar posição das páginas */
@@ -150,7 +152,9 @@ header {
 
 .visualizador {
     width: 35vw;
-    height: 25vh;
+    max-width: 400px;
+    height: 30vh;
+    max-height: 400px;
     margin: auto;
 
     border: 1px;
